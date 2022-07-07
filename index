@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>host 846</title>
+    <link rel="stylesheet" href="host.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+  </head>
+  <header>
+    <h1>
+      <a href="">Host Club YASHIRO</a>
+    </h1>
+    <nav class="pc-nav">
+      <ul>
+        <li><a href="#ca">キャスト</a></li>
+        <li><a href="#sr">サービス</a></li>
+        <li><a href="https://twitter.com/Zero87392564">運営</a></li>
+        <li><a href="#sf">募集</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <p id="ca" class="yc1">キャスト</p>
+    <p class="y">名前をタップするとTwitterに飛べます</p>
+    <img
+      class="yp1"
+      src="https://pbs.twimg.com/media/FXDIBzQVUAE_bQJ?format=jpg&name=small"/>
+    <p class="yw">
+      <a href="https://twitter.com/yashiro1031">やしろ</a><br>当店唯一のキャストです。無報酬で働いてもらってます♡</p>
+      <p id="sf" class="yc1">募集</p>
+      <p class="yw">申し出てくれたら勝手にキャストに追加するよ♡お待ちしてますぅ</p>
+    <p id="sr" class="yc1">料金表</p>
+    <p class="yw">
+      <img
+        src="https://pbs.twimg.com/media/FXDMvbPVQAA7TTI?format=jpg&name=small"
+        alt="写真"
+        align="left"
+      />
+      キャストが退店するまで居ても無料！ご来店いただく毎に100pt進呈致します。<br />キャストへのプレゼントは左記の通りです
+    </p>
+  </body>
+</html>
