@@ -12,7 +12,7 @@
  header {
     width: 100%;
     padding: 30px 4% 10px;
-    background-color: #000;
+    background-color: #002b3e;
     position: fixed;
    top: 0;
    display: flex;
@@ -49,7 +49,7 @@ p.yc1{
     color: #ff0000;
     margin-top: 100px;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     padding: 15px 25px;
     margin: 110px auto 0;
 }
@@ -58,14 +58,29 @@ img.yp1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 420px;
-    height: 580px; 
+    width: 520px;
+    height: 680px; 
 }
 
 p.yw {
-    color: #ffffff;
-    text-align: center;
-    font-size: 40px;
+   color: #fff;
+   font-size: 40px;
+   background: linear-gradient(to left, #222222,#000505);
+   display: block;
+   padding: 10px 25px;
+   border-radius: 30px;
+   
+   font-weight: bold;
+   width: 300px;
+   text-align: center;
+   margin: 10px auto 0;
+   letter-spacing: 2px;
+}
+
+p.yw2 {
+   color: aqua;
+   text-align: center;
+   font-size: 35px;
 }
 
 p.tst {
@@ -73,40 +88,9 @@ p.tst {
     font-size: 40px;
 }
 
-.follow-me {
-    list-style: none;
-    margin: 0 0 -8px;
-    overflow: hidden;
-    padding: 0;
-    align-items: ;
-  }
-  .follow-me li {
-    float: left;
-    margin: 0 8px 8px 0;
-    padding: 0;
-  }
-  .follow-me li a::before {
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    color: #fff;
-    display: inline-block;
-    font-family: FontAwesome;
-    font-size: 16px;
-    height: 44px; /* Button height */
-    line-height: 44px; /* Button height */
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    text-align: center;
-    width: 44px; /* Button width */
-  }
-  .follow-me li a:hover::before {
-    opacity: 0.7;
-  }
-  .follow-me li a[href*="twitter.com"]::before        { background-color: #55acee; content: "\f099"; }
-
-  p.y {
+p.y {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 45px;
     text-align: center;
   }
   
