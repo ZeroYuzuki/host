@@ -12,7 +12,7 @@
  header {
     width: 100%;
     padding: 30px 4% 10px;
-    background-color: #002b3e;
+    background-color: #1a0007;
     position: fixed;
    top: 0;
    display: flex;
@@ -71,7 +71,7 @@ p.yw {
    border-radius: 30px;
    
    font-weight: bold;
-   width: 300px;
+   width: 500px;
    text-align: center;
    margin: 10px auto 0;
    letter-spacing: 2px;
