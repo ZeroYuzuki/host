@@ -19,6 +19,13 @@
    align-items: center;
 }
 
+img.ytw {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px; 
+}
 h1 {
     margin: 0; padding: 0;
     font-size: 40px;
@@ -46,7 +53,7 @@ h1 {
  }
 
 p.yc1{
-    color: #ff0000;
+    color: #ffffff;
     margin-top: 100px;
     text-align: center;
     font-size: 60px;
@@ -63,13 +70,12 @@ img.yp1 {
 }
 
 p.yw {
-   color: #fff;
    font-size: 40px;
    background: linear-gradient(to left, #222222,#000505);
    display: block;
    padding: 10px 25px;
    border-radius: 30px;
-   
+   color: #ff0000;
    font-weight: bold;
    width: 500px;
    text-align: center;
