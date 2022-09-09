@@ -61,12 +61,23 @@ p.yc1{
     margin: 110px auto 0;
 }
 
+.highlighter {
+	background: linear-gradient(transparent 40%, #eb19c8 40% 90%, transparent 90%);
+}
+
 img.yp1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
-    height: 680px; 
+    width: 630px;
+    height: 680px;
+
+    border: 13px solid transparent;
+    border-radius: 80%;
+    padding: 5px;
+    background:
+    padding-box linear-gradient(white,white),
+    border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
 }
 
 p.yw {
