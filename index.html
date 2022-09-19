@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    
-    <title>host 846</title>
-    <link rel="stylesheet" href="host.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Host club 846</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        const hum = $("#hamburger, .close");
+        const nav = $(".sp-nav");
+        hum.on("click", function () {
+          nav.toggleClass("toggle");
+        });
+      });
+    </script>
   </head>
-  <header>
-    <h1>
-      <a href="">Host Club YASHIRO</a>
-    </h1>
-    <nav class="pc-nav">
-      <ul>
-        <li><a href="#ca">キャスト</a></li>
-        <li><a href="#sr">サービス</a></li>
-        <li><a href="https://twitter.com/Zero87392564">運営</a></li>
-        <li><a href="#sf">募集</a></li>
-      </ul>
-    </nav>
-  </header>
-  <body>
-    
+  
+    <header>
+      <h1>
+        <a href="/">Host Club YASHIRO</a>
+      </h1>
+      <nav class="pc-nav">
+        <ul>
+          <li><a href="#ca">キャスト</a></li>
+          <li><a href="#sr">サービス</a></li>
+          <li><a href="https://twitter.com/Zero87392564">運営</a></li>
+          <li><a href="#sf">募集</a></li>
+          <li class="close"><span>閉じる</span></li>
+        </ul>
+      </nav>
+      <nav class="sp-nav">
+        <ul>
+          <li><a href="#ca">キャスト</a></li>
+          <li><a href="#sr">サービス</a></li>
+          <li><a href="https://twitter.com/Zero87392564">運営</a></li>
+          <li><a href="#sf">募集</a></li>
+          <li class="close"><span>閉じる</span></li>
+        </ul>
+      </nav>
+      <div id="hamburger">
+        <span></span>
+      </div>
+    </header>
+
+<body>
     <div class="news-banner">
-      <div class="news-banner__content">
-      <p>アイコンを変更すると自動でこっちも変わるようになりましたー！</p>
+        <div class="news-banner__content">
+        <p>スマホ表示に対応しましたー！</p>
+      </div>
     </div>
-  </div>
+
     <p id="ca" class="yc1">CAST</p>
     <p class="yw2">名前をタッチするとRealityのプロフに飛びます</p>
     <p class="yw">
@@ -74,5 +104,6 @@
     <p class="y">
       無料！タダ！0円！！！
     </p>
+
   </body>
 </html>
