@@ -26,6 +26,37 @@ a {
    text-decoration: none;
    color: #fff;
 }
+
+a.twitter {
+   color: #ffffff;
+  border: 2px double transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  font-size: 20px;
+  margin: 30px 0px 0px 70px;
+  padding: 0px 50px;
+  display: inline-block;
+  font-family: system-ui;
+}
+
+@media screen and (min-width: 960px) {
+   a.twitter {
+      color: #ffffff;
+     border: 5px double transparent;
+     border-radius: 80px;
+     background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+     background-origin: border-box;
+     background-clip: padding-box, border-box;
+     font-size: 40px;
+     margin: 30px 0px 0px 500px;
+     padding: 0px 80px;
+     display: inline-block;
+     font-family: system-ui;
+   }	
+}
+
 nav {
    margin: 0 0 0 auto;
 }
@@ -244,7 +275,7 @@ img.ytw {
   }
   
   p.yc1{
-    color: #ffffff;
+     color: #ffffff;
      margin-top: 100px;
      text-align: center;
      font-size: 40px;
@@ -260,6 +291,7 @@ img.ytw {
      font-size: 80px;
      padding: 15px 25px;
      margin: 110px auto 0;
+     text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
   }
 }
 
@@ -282,9 +314,8 @@ img.yp1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 580px;
-    height: 630px;
- 
+    width: 480px;
+    height: 500px;
     border: 13px solid transparent;
     border-radius: 80%;
     padding: 5px;
