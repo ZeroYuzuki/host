@@ -290,7 +290,7 @@ img.ytw {
    color: #ffffff;
    margin-top: 100px;
    text-align: center;
-   font-size: 70px;
+   font-size: 40px;
    padding: 15px 25px;
    margin: 30px auto 0;
    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
@@ -312,10 +312,10 @@ img.yp1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 330px;
-    height: 330px;
-    border: 8px solid transparent;
-    border-radius: 80%;
+    width: 250px;
+    height: 250px;
+    border: 5px solid transparent;
+    border-radius: 40%;
     padding: 5px;
     background:
     padding-box linear-gradient(white,white),
@@ -330,13 +330,47 @@ img.yp1 {
     width: 480px;
     height: 500px;
     border: 13px solid transparent;
-    border-radius: 80%;
-    padding: 5px;
+    border-radius: 40%;
+    padding: 10px;
     background:
     padding-box linear-gradient(white,white),
     border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
  }
 }
+
+img.yz1 {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 150px;
+   height: 150px;
+   border: 3px solid transparent;
+   border-radius: 80%;
+   padding: 3px;
+   background:
+   padding-box linear-gradient(white,white),
+   border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+}
+
+@media screen and (min-width: 960px) {
+img.yz1 {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 480px;
+   height: 500px;
+   border: 13px solid transparent;
+   border-radius: 80%;
+   padding: 5px;
+   background:
+   padding-box linear-gradient(white,white),
+   border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+}
+}
+
+ul.image {
+   display: flex;
+ }
 
 p.yw {
     font-size: 25px;
@@ -358,7 +392,7 @@ p.yw {
 
 p.yw2 {
     text-align:center;
-     font-size: 20px;
+     font-size: 17px;
      font-family: 'Roboto',arial,sans-serif;
      background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
      -webkit-background-clip: text;
@@ -380,6 +414,6 @@ p.y {
   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
   }
