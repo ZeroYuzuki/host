@@ -21,6 +21,37 @@ body {
    }	
 }
 
+.news-banner {
+   width: 26ch; 
+   /* // 文字数分の長さに設定 */
+   animation: typing 3s steps(26), blink .5s step-end infinite alternate;
+   white-space: nowrap; 
+   /* // 必須 */
+   overflow: hidden; 
+   /* // 必須 */
+   border-right: 3px solid;
+    /* // カーソルの大きさを設定する */
+   font-size: 2em;
+
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+ }
+
+ @keyframes typing {
+   from {
+     width: 0 
+     /* // 行頭から開始 */
+   }
+ }
+     
+ @keyframes blink {
+   50% {
+     border-color: transparent 
+     /* // チカチカする表現部分 */
+   }
+ }
+
 header {
    padding: 30px 4% 10px;
    position: fixed;
