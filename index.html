@@ -1,133 +1,450 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex,nofollow" />
-    <title>Host club 846</title>
+@charset "utf-8";
+* {
+   box-sizing: border-box;
+}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-color: #08001e;
+   letter-spacing : 0.2em;
+}
 
-    <link rel="stylesheet" href="host.css" />
-    <script src="zerohp.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.js"
-      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(function () {
-        const hum = $("#hamburger, .close");
-        const nav = $(".sp-nav");
-        hum.on("click", function () {
-          nav.toggleClass("toggle");
-        });
-      });
-    </script>
+@media screen and (min-width: 960px) {
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #060017;
+      letter-spacing : 0.2em;
+   }	
+}
 
-  </head>
+.news-banner {
+   width: 26ch; 
+   /* // 文字数分の長さに設定 */
+   animation: typing 3s steps(26), blink .5s step-end infinite alternate;
+   white-space: nowrap; 
+   /* // 必須 */
+   overflow: hidden; 
+   /* // 必須 */
+   border-right: 3px solid;
+    /* // カーソルの大きさを設定する */
+   font-size: 2em;
 
-    <header>
-      <h1>
-        <a href="https://zeroyuzuki.github.io/host846/">Host Club YASHIRO</a>
-      </h1>
-      <nav class="pc-nav">
-        <ul>
-          <li><a href="#ca">キャスト</a></li>
-          <li><a href="#sr">サービス</a></li>
-          <li><a href="https://twitter.com/Zero87392564">運営</a></li>
-          <li><a href="#sf">募集</a></li>
-          <li><a href="https://zeroyuzuki.github.io/host846/">English</a></li>
-          <li class="close"><span>閉じる</span></li>
-        </ul>
-      </nav>
-      <nav class="sp-nav">
-        <ul>
-          <li><a href="#ca">キャスト</a></li>
-          <li><a href="#sr">サービス</a></li>
-          <li><a href="https://twitter.com/Zero87392564">運営</a></li>
-          <li><a href="#sf">募集</a></li>
-          <li><a href="https://zeroyuzuki.github.io/host846/">English</a></li>
-          <li class="close"><span>閉じる</span></li>
-        </ul>
-      </nav>
-      <div id="hamburger">
-        <span></span>
-      </div>
-      <a href="https://zeroyuzuki.github.io/host846/">English</a>
-    </header>
+   background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+ }
 
-<body>
+ @keyframes typing {
+   from {
+     width: 0 
+     /* // 行頭から開始 */
+   }
+ }
+     
+ @keyframes blink {
+   50% {
+     border-color: transparent 
+     /* // チカチカする表現部分 */
+   }
+ }
 
-  <div class="news-banner">
-    22/7/7完成<br>24/6/17最終更新
-  </div>
-    <div class="news-banner">
-        <div class="news-banner__content">
-        <p>見に来てくれてありがとう</p>
-      </div>
-    </div>
+header {
+   padding: 30px 4% 10px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+}
+h1 {
+   margin: 0; padding: 0;
+   font-size: 20px;
+}
+a {	
+   text-decoration: none;
+   color: #fff;
+}
 
-    <p id="ca" class="yc1">CAST</p>
-    <p class="yw2">名前をタッチするとRealityのプロフに飛びます</p>
+a.twitter {
+   color: #ffffff;
+  border: 2px double transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  font-size: 20px;
+  margin: 30px 0px 0px 70px;
+  padding: 0px 50px;
+  display: inline-block;
+  font-family: system-ui;
+}
 
-    <p class="yw">
-      <a href="https://reality.app/profile/22fe2da3?adj_t=8ogcewh_z9yhix5">零-ゼロ-</a></p>
-      <ul class="image"><li class="image"><img class="yz1" src="https://image-api.reality.wrightflyer.net/api/v1/image/profile/qyapbc87bbzsiivttwjcg17m5z/1666065262" class="profile__thumbnail"></li>
-      </ul>
-      <a class="twitter" href="https://twitter.com/Zero87392564">TWITTER</a>
-      <a class="twitter" href="https://twitcasting.tv/zero87392564">ツイキャス</a>
-    <br><p class="yw2">このサイトを作った天才。ツイキャスでイケカテ配信者してたよぉ</p>
+@media screen and (min-width: 960px) {
+   a.twitter {
+      color: #ffffff;
+     border: 5px double transparent;
+     border-radius: 80px;
+     background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+     background-origin: border-box;
+     background-clip: padding-box, border-box;
+     font-size: 40px;
+     margin: 30px 0px 0px 500px;
+     padding: 0px 80px;
+     display: inline-block;
+     font-family: system-ui;
+   }	
+}
 
-    <p class="yw">
-      <a href="https://t.co/y0g86fEleu">やしろ</a></p>
-      <img class="yp1" src="https://image-api.reality.wrightflyer.net/api/v1/image/profile/bhyaei7n1jd9a52cby0w99hc3t/1643876785" class="profile__thumbnail">
-      <a class="twitter" href="https://twitter.com/yashiro1031">TWITTER</a>
-      <a class="twitter" href="https://t.co/y0g86fEleu">Reality</a>
-    <br><p class="yw2">関西弁のおねえさん。</p>
+nav {
+   margin: 0 0 0 auto;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   display: flex;
+}
+li {
+   margin: 0 0 0 15px;
+   font-size: 14px;
+}
+.main-visual {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background: url('main_visual.jpg') top center / cover no-repeat;
+}
+h2 {
+   margin: 0;
+   font-size: 30px;
+   font-weight: normal;
+   color: #fff;
+}
 
-    <p class="yw"><a href="https://t.co/B4oZ8StGUc">ななこ</a></p>
-    <img class="yp1" src="https://image-api.reality.wrightflyer.net/api/v1/image/profile/135pumgymdhhrjgvn9gn3s29yz/1645805304" class="profile__thumbnail">
-    <a class="twitter" href="https://twitter.com/Nana5_neri">TWITTER</a>
-    <a class="twitter" href="https://t.co/B4oZ8StGUc">Reality</a>
-    <p class="yw2">お姉さんボイスからキモオタまで色々な声が出せるおねえさん<br>イケボがめっちゃカッコイイ</p>
-    <p class="yw">
+.sp-nav {
+   display: none;
+}
 
-      <a href="https://t.co/78mKmOw8u1">夢空愛雨・黒衣憂</a></p>
-      <img class="yp1" src="https://image-api.reality.wrightflyer.net/api/v1/image/profile/8jib723gmbd5ad9twbesei71ty/1659026722" class="profile__thumbnail">
-      <a class="twitter" href="https://twitter.com/meu_1030">TWITTER</a>
-      <a class="twitter" href="https://t.co/78mKmOw8u1">Reality</a>
-    <br><p class="yw2">イケボでサイコパスなサイコパス</p>
+@media screen and (max-width: 640px) {
+   .pc-nav {
+      display: none;
+   }
+   .sp-nav {
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: block;
+      width: 100%;
+      background: rgba(0, 0, 0, .8);
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: all .2s ease-in-out;
+   }
+   #hamburger {
+      position: relative;
+      display: block;
+      width: 30px;
+      height: 25px;
+      margin: 0 0 0 auto;
+   }
+   #hamburger span {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transform: translateY(-50%);
+   }
+   #hamburger::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+   }
+   #hamburger::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 70%;
+      height: 2px;
+      background-color: #fff;
+   }
+   /*スマホメニュー*/
+   .sp-nav ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+   .sp-nav li {
+      margin: 0;
+      padding: 0;
+   }
+   .sp-nav li span {
+      font-size: 15px;
+      color: #fff;
+   }
+   .sp-nav li a, .sp-nav li span {
+      display: block;
+      padding: 20px 0;
+   }
+   /*-閉じるアイコンー*/
+   .sp-nav .close {
+      position: relative;
+      padding-left: 20px;
+   }
+   .sp-nav .close::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 16px;
+      height: 1px;
+      background: #fff;
+      transform: rotate( 45deg );
+   }
+   .sp-nav .close::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 16px;
+      height: 1px;
+      background: #fff;
+      transform: rotate( -45deg );
+   }
+   .toggle {
+      transform: translateY( 0 );
+      opacity: 1;
+   }
+   .main-visual {
+      padding: 0 4%;
+   }
+   h2 {
+      line-height: 1.6;
+      text-align: center;
+   }
+}
+/* ヘッダーここまで */
 
-    <p class="yw">
-      <a href="https://reality.app/profile/47417c76?adj_t=8ogcewh_z9yhix5">花子</a></p>
-      <img class="yp1" src="https://image-api.reality.wrightflyer.net/api/v1/image/profile/fp1ran1wprz0jwdfu4ewj2ajfy/1661583077" class="profile__thumbnail">
-      <a class="twitter" href="https://twitter.com/0823_h">TWITTER</a>
-      <a class="twitter" href="https://reality.app/profile/47417c76?adj_t=8ogcewh_z9yhix5">Reality</a>
-    <br><p class="yw2">アル中</p>
+/* バナー本体 */
+.news-banner {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #060017;
+    overflow: hidden;
+    margin-top: 100px;
+  }
+  
+  /* バナー内コンテンツ */
+  .news-banner__content {
+    display: inline-block;
+    background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    line-height: 10px;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: animate-banner 20s linear infinite;
+    font-size: 20px;
+  }
 
-    <p class="yw">
-      <a href="https://reality.app/profile/7a289c83?adj_t=8ogcewh_z9yhix5">なな姉</a></p>
-      <img class="yp1" src="https://image-api.reality.wrightflyer.net/api/v1/image/profile/mr6pjp35pehjmj6r01z2n3qgg5/1663178312" class="profile__thumbnail">
-      <a class="twitter" href="https://twitter.com/nananeesann">TWITTER</a>
-      <a class="twitter" href="https://reality.app/profile/7a289c83?adj_t=8ogcewh_z9yhix5">Reality</a>
-    <br><p class="yw2">ゲテモノを食べたり鼻からデスソースを吸うおねえさん</p>
+  @media screen and (min-width: 960px) {
+	.news-banner__content {
+        display: inline-block;
+        background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+        line-height: 10px;
+        padding-left: 100%;
+        white-space: nowrap;
+        animation: animate-banner 20s linear infinite;
+        font-size: 35px;
+    }
+}
+  
+  /* バナー内の要素をすべて選択 */
+  .news-banner__content > * {
+    display: inline-block;
+  }
+  
+  /* 横にスクロールさせるアニメーション */
+  @keyframes animate-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 
-    <p class="yw">
-      <a href="https://reality.app/profile/e1111e13?adj_t=8ogcewh_z9yhix5">ルミ</a></p>
-      <img class="yp1" src="https://image-api.reality.wrightflyer.net/api/v1/image/profile/rzm4mtmrimaia54s27teua4535/1665801135" class="profile__thumbnail">
-      <a class="twitter" href="https://twitter.com/rumi0044">TWITTER</a>
-      <a class="twitter" href="https://reality.app/profile/e1111e13?adj_t=8ogcewh_z9yhix5">Reality</a>
-    <br><p class="yw2">クールでカッコイイおねえさん</p>
+  @media screen and (min-width: 960px) {
+  img.ytw {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100px;
+     height: 100px; 
+  }
+}
 
-      <p id="sf" class="yc1">募集</p>
-      <p class="y">申し出てくれたらキャストに追加するよ♡お待ちしてます</p>
-      <p id="sf" class="yc1">このサイトについて</p>
-      <p class="y">俺が暇つぶし兼デザインの勉強として作ったお遊びのサイトだよぉ</p>
+img.ytw {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 70px;
+     height: 70px; 
+  }
+  
+  p.yc1{
+   color: #ffffff;
+   margin-top: 100px;
+   text-align: center;
+   font-size: 40px;
+   padding: 15px 25px;
+   margin: 30px auto 0;
+   text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+  }
 
+  @media screen and (min-width: 960px) {
+  p.yc1{
+    color: #ffffff;
+     margin-top: 100px;
+     text-align: center;
+     font-size: 80px;
+     padding: 15px 25px;
+     margin: 110px auto 0;
+     text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+  }
+}
 
-    <p id="sr" class="yc1"></p>
-    <p class="y">
-     年上のお姉さんとカラオケが好き。美味いもん奢ってくれたり養ってくれるお姉さん募集中🤗
-    </p>
-  </body>
-</html>
+img.yp1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    border: 5px solid transparent;
+    border-radius: 40%;
+    padding: 5px;
+    background:
+    padding-box linear-gradient(white,white),
+    border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+ }
+
+@media screen and (min-width: 960px) {
+img.yp1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 500px;
+    border: 13px solid transparent;
+    border-radius: 40%;
+    padding: 10px;
+    background:
+    padding-box linear-gradient(white,white),
+    border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+ }
+}
+
+img.yz1 {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 150px;
+   height: 150px;
+   border: 3px solid transparent;
+   border-radius: 80%;
+   padding: 3px;
+   background:
+   padding-box linear-gradient(white,white),
+   border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+}
+
+@media screen and (min-width: 960px) {
+img.yz1 {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 480px;
+   height: 500px;
+   border: 13px solid transparent;
+   border-radius: 80%;
+   padding: 5px;
+   background:
+   padding-box linear-gradient(white,white),
+   border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+}
+}
+
+ul.image {
+   display: flex;
+ }
+
+p.yw {
+    font-size: 25px;
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+    text-align: center;
+    margin: 10px auto 10px;
+    letter-spacing: 2px;
+  }
+
+  @media screen and (min-width: 960px) {
+    p.yw {
+        font-size: 40px;
+        
+      }
+}
+
+p.yw2 {
+    text-align:center;
+     font-size: 17px;
+     font-family: 'Roboto',arial,sans-serif;
+     background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (min-width: 960px) {
+    p.yw2 {
+        text-align:center;
+         font-size: 50px;
+         font-family: 'Roboto',arial,sans-serif;
+         background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+}
+
+p.y {
+  background: -webkit-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    text-align: center;
+  }
