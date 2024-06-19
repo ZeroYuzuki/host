@@ -21,10 +21,11 @@ body {
    }	
 }
 
+
 .news-banner {
    width: 26ch; 
    /* // 文字数分の長さに設定 */
-   animation: typing 3s steps(26), blink .5s step-end infinite alternate;
+   animation: typing 2.5s steps(30), blink .5s step-end infinite alternate;
    white-space: nowrap; 
    /* // 必須 */
    overflow: hidden; 
@@ -70,33 +71,50 @@ a {
    color: #fff;
 }
 
+/* 親要素のスタイル */
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh; /* 縦方向の中央揃えのため */
+}
+
+/* リンク要素のスタイル */
 a.twitter {
    color: #ffffff;
-  border: 2px double transparent;
-  border-radius: 80px;
-  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  font-size: 20px;
-  margin: 30px 0px 0px 70px;
-  padding: 0px 50px;
-  display: inline-block;
-  font-family: system-ui;
+   border: 5px double transparent;
+   border-radius: 80px;
+   background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+   background-origin: border-box;
+   background-clip: padding-box, border-box;
+   font-size: 20px;
+   margin: 10px 0; /* リンク間のスペースを調整 */
+   padding: 10px 0; /* 上下のパディング */
+   display: inline-block;
+   font-family: system-ui;
+   text-align: center; /* テキストを中央揃え */
+   width: 250px; /* 幅を固定 */
+   box-sizing: border-box; /* パディングとボーダーを含む幅を計算 */
 }
+
 
 @media screen and (min-width: 960px) {
    a.twitter {
       color: #ffffff;
-     border: 5px double transparent;
-     border-radius: 80px;
-     background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
-     background-origin: border-box;
-     background-clip: padding-box, border-box;
-     font-size: 40px;
-     margin: 30px 0px 0px 500px;
-     padding: 0px 80px;
-     display: inline-block;
-     font-family: system-ui;
+   border: 5px double transparent;
+   border-radius: 80px;
+   background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+   background-origin: border-box;
+   background-clip: padding-box, border-box;
+   font-size: 20px;
+   margin: 10px 0; /* リンク間のスペースを調整 */
+   padding: 10px 0; /* 上下のパディング */
+   display: inline-block;
+   font-family: system-ui;
+   text-align: center; /* テキストを中央揃え */
+   width: 400px; /* 幅を固定 */
+   box-sizing: border-box; /* パディングとボーダーを含む幅を計算 */
    }	
 }
 
@@ -266,7 +284,7 @@ h2 {
     line-height: 10px;
     padding-left: 100%;
     white-space: nowrap;
-    animation: animate-banner 20s linear infinite;
+    animation: animate-banner 8s linear infinite;
     font-size: 20px;
   }
 
@@ -279,8 +297,8 @@ h2 {
         line-height: 10px;
         padding-left: 100%;
         white-space: nowrap;
-        animation: animate-banner 20s linear infinite;
-        font-size: 35px;
+        animation: animate-banner 8s linear infinite;
+        font-size: 60px;
     }
 }
   
@@ -339,19 +357,32 @@ img.ytw {
   }
 }
 
+/* 基本スタイル */
 img.yp1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    height: 250px;
-    border: 5px solid transparent;
-    border-radius: 40%;
-    padding: 5px;
-    background:
-    padding-box linear-gradient(white,white),
-    border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
- }
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 250px;
+   height: 250px;
+   border: 5px solid transparent;
+   border-radius: 40%;
+   padding: 5px;
+   background:
+   padding-box linear-gradient(white,white),
+   border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* アニメーションを適用するクラス */
+img.yp1.animate {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+
+
 
 @media screen and (min-width: 960px) {
 img.yp1 {
@@ -366,6 +397,10 @@ img.yp1 {
     background:
     padding-box linear-gradient(white,white),
     border-box repeating-linear-gradient(#5199EA,#5696E8,#777EE0,#C447CB,#BD4CCD);
+    opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    
  }
 }
 
